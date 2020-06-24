@@ -6988,7 +6988,7 @@ select {
 .select-wrapper .caret {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -50px;
   bottom: 0;
   margin: auto 0;
   z-index: 0;
@@ -7353,6 +7353,7 @@ input[type=range]::-ms-thumb {
 .sidenav li {
   float: none;
   line-height: 48px;
+  list-style: none;
 }
 
 .sidenav li.active {
