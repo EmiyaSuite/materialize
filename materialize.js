@@ -2904,8 +2904,8 @@ var $jscomp$this = this;
       key: "_setupTemporaryEventHandlers",
       value: function _setupTemporaryEventHandlers() {
         // Use capture phase event handler to prevent click
-        document.body.addEventListener('click', this._handleDocumentClickBound, true);
-        document.body.addEventListener('touchend', this._handleDocumentClickBound);
+        document.body.addEventListener('click', this._handleDocumentClickBound, true); //document.body.addEventListener('touchend', this._handleDocumentClickBound);
+
         document.body.addEventListener('touchmove', this._handleDocumentTouchmoveBound);
         this.dropdownEl.addEventListener('keydown', this._handleDropdownKeydownBound);
       }
@@ -2913,8 +2913,8 @@ var $jscomp$this = this;
       key: "_removeTemporaryEventHandlers",
       value: function _removeTemporaryEventHandlers() {
         // Use capture phase event handler to prevent click
-        document.body.removeEventListener('click', this._handleDocumentClickBound, true);
-        document.body.removeEventListener('touchend', this._handleDocumentClickBound);
+        document.body.removeEventListener('click', this._handleDocumentClickBound, true); //document.body.removeEventListener('touchend', this._handleDocumentClickBound);
+
         document.body.removeEventListener('touchmove', this._handleDocumentTouchmoveBound);
         this.dropdownEl.removeEventListener('keydown', this._handleDropdownKeydownBound);
       }
